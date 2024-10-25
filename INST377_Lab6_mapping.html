@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>INST377 - Mapping Library: Leaflet.js</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin="" defer></script>
+
+     <script src="INST377_Lab6_mapping_leaflet.js" defer></script>
+     <style>
+        #map { height: 400px; }
+
+        .marker-label {
+            font-size: 1.5 em;
+            font-weight: bold;
+        }
+        .marker-coords {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: black;
+
+        }
+        .locality {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+     </style>
+
+    </head>
+    <body>
+        <h1>This is a Map API</h1>
+        <div id="map"></div>
+        <div id="coordinates">
+            <h2>Generated Markers and Locality Information</h2>
+            <p><span class="marker-label">Marker 1:</span> <span id="marker1-coords" class="marker-coords"></span> <br> Locality: <span id="marker1-locality" class="locality"></span></p>
+            <p><span class="marker-label">Marker 2:</span> <span id="marker2-coords" class="marker-coords"></span> <br> Locality: <span id="marker2-locality" class="locality"></span></p>
+            <p><span class="marker-label">Marker 3:</span> <span id="marker3-coords" class="marker-coords"></span> <br> Locality: <span id="marker3-locality" class="locality"></span></p>
+        </div>
+    </body>
+</html>
